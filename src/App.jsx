@@ -1,10 +1,14 @@
-import React from 'react'
+
+import { GlobalContextProvider } from './context/GlobalContext';
+import Layout from './layout/Layout';
 
 function App() {
   return (
-    <div>
-      <h1 className='font-moonDance text-6xl font-bold text-[#090e34] ml-20  mt-25'>Complete Tailwind CSS <br />Template for SaaS Website</h1>
-    </div>
+   <>
+   <GlobalContextProvider>
+   <Layout></Layout>
+   </GlobalContextProvider>
+   </>
   )
 }
 

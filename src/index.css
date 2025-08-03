@@ -3,4 +3,21 @@
 
 @theme{
   --font-moonDance: "Roboto", sans-serif;
+ 
+  
+}
+@layer components {
+  .bgBtn{
+    @apply bg-[#090e34] text-white font-semibold py-1 lg:py-2.5 text-[18px] px-5 lg:px-10 hover:shadow-lg cursor-pointer
+  }
+  .noBgBtn{
+    @apply bg-transparent text-[#88888b] font-semibold py-1 lg:py-2.5 text-[18px] px-1 lg:px-2 cursor-pointer
+  }
+  .text-Nav{
+  
+    @apply text-[#282828fb] 
+  }
+  .my-container{
+    @apply w-[86%] mx-auto 
+  }
 }
