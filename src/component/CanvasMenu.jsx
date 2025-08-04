@@ -14,7 +14,7 @@ function CanvasMenu({toggle}) {
     },[toggle])
   return (
     <>
-         <ul id='menu' className={` ${toggle?'flex':'hidden'} lg:hidden text-Nav  flex-col absolute right-0 top-17 shadow-xl w-40 rounded p-6 gap-x-13`}>
+         <ul id='menu' className={`z-50 bg-white ${toggle?'flex':'hidden'} lg:hidden text-Nav  flex-col absolute right-0 top-17 shadow-xl w-40 md:w-70 rounded p-6 gap-x-13`}>
               <li className='block'>
                 <NavLink className="hover:text-[#4a6cf7] block py-2">Home</NavLink>
               </li>

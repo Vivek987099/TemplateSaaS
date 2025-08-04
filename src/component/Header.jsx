@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import "animate.css";
 import { GlobalContext } from "../context/GlobalContext";
 import Button from "./Button";
 import NoBgButton from "./NoBgButton";
@@ -6,17 +7,26 @@ import { IoMenuOutline } from "react-icons/io5";
 
 import CanvasMenu from "./CanvasMenu";
 import { IoCloseOutline } from "react-icons/io5";
-
 import { useState } from "react";
 
+
+
 function Header() {
-  let [toggle, setToggle] = useState(false);
+ 
+  const [toggle, setToggle] = useState(false);
+   
+
 
   return (
     <>
       {/* HEADER OF THE WEBSITE */}
-      <header className="font-moonDance py-5">
-        <div className="my-container  flex justify-between items-center">
+      <header
+       
+        className={`font-moonDance py-5 z-50 fixed top-0 left-0 right-0 w-full bg-transparent backdrop-blur h-20  "
+            
+        }`}
+      >
+        <div className="my-container   flex justify-between items-center">
           {/* HEADER LOGO  */}
           <div>
             <img
@@ -61,7 +71,11 @@ function Header() {
               }}
               className="py-1.5 px-1.5 rounded lg:hidden "
             >
-              {toggle ?<IoCloseOutline  className="text-[30px]"/> : <IoMenuOutline  className="text-[30px]"/> }
+              {toggle ? (
+                <IoCloseOutline className="text-[30px]" />
+              ) : (
+                <IoMenuOutline className="text-[30px]" />
+              )}
             </div>
           </div>
         </div>

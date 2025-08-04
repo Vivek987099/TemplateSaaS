@@ -8,7 +8,7 @@
 }
 @layer components {
   .bgBtn{
-    @apply bg-[#090e34] text-white font-semibold py-1 lg:py-2.5 text-[18px] px-5 lg:px-10 hover:shadow-lg cursor-pointer
+    @apply bg-[#090e34] text-white font-semibold py-1 lg:py-2.5 text-[18px] px-5 lg:px-10 hover:shadow-lg cursor-pointer hover:rotate-3 transition-all duration-100
   }
   .noBgBtn{
     @apply bg-transparent text-[#88888b] font-semibold py-1 lg:py-2.5 text-[18px] px-1 lg:px-2 cursor-pointer
@@ -18,6 +18,15 @@
     @apply text-[#282828fb] 
   }
   .my-container{
-    @apply w-[86%] mx-auto 
+    @apply w-[80%] mx-auto 
+  }
+  #home{
+    background: url("public/shape.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  html{
+    scroll-behavior: smooth;
   }
 }
